@@ -1,0 +1,38 @@
+.header{
+    background: #FFFFFF;
+    border: 1px solid #EDEFF1;
+    padding: 5px 6px;
+    width: 418px;
+    margin: 0 auto;
+    border-radius: 300px;
+    margin-bottom: 38px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+        li {
+            padding: 2px 20px;
+            
+            a{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 28px;
+                color: #787E8E;
+            }
+        }
+    }
+
+    .active {
+        background: #0BB634;
+        border: 1px solid #EDEFF1;
+        // padding: 2px 20px;
+        border-radius: 16.5px;
+
+        a{
+            color: #FFFFFF;
+        }
+    }
+}

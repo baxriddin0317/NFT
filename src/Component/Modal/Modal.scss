@@ -1,0 +1,120 @@
+.modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    background: rgba($color: #000000, $alpha: 0.6);
+    padding-top: 50px;
+
+    &__content {
+        width: 1117px;
+        margin: 0 auto;
+        height: 573px;
+        background: #FFFFFF;
+        border: 1px solid #EDEFF1;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 31px 38px;
+        // margin-bottom: 45px;
+
+        &-head {
+            margin-bottom: 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        &-title {
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 28px;
+                color: #000000;
+        }
+        
+        &-btn {
+                background: none;
+                border: 1px solid rgba($color: #000000, $alpha: 0.4);
+                border-radius: 10px;
+                width: 360px;
+                padding: 10px;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+                color: #121826;
+        }
+    }
+
+    &__list {
+        margin-bottom: 40px;
+        width: 1004px;
+        display: flex;
+        height: 325px;
+        overflow-y: scroll;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &::-webkit-scrollbar{
+            width: 0;
+        }
+        
+        &-item {
+            position: relative;
+            width: 234px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            
+            img {
+                width: 100%;
+                height: 321px;
+
+            }
+        }
+
+        .item-active{
+            border: 5px solid #0BB634;
+        }
+
+        &-btn {
+            cursor: pointer;
+            width: 100%;
+            left: 0;
+            position: absolute;
+            bottom: 0;
+            background: rgb(182, 182, 182);
+            border: none;
+            padding: 10px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #FFFFFF;
+
+            i{
+                font-size: 21px;
+            }
+        }
+    }
+
+    &__btn {
+        width: 228px;
+        height: 42px;
+        background: #7e7e7e;
+        border-radius: 21px;
+        border: none;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 28px;
+        color: #FFFFFF;
+    }
+
+    .btn-active {
+        background: #0BB634;
+        cursor: pointer;
+    }
+}
